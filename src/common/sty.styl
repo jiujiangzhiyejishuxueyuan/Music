@@ -1,0 +1,249 @@
+$red = #ef4238
+$blue = #00a1d6
+$blueh = #00b5e5
+.container
+  margin 0 auto
+  width 1400px
+.flex
+  display flex
+.expend
+  flex 1 0 auto
+.justify-center
+  justify-content center
+.justify-start
+  justify-content flex-start
+.justify-end
+  justify-content flex-end
+.justify-between
+  justify-content space-between
+.justify-around
+  justify-content space-around
+.align-center
+  align-items center
+.align-start
+  align-items flex-start
+.align-end
+  align-items flex-end
+.align-stretch
+  align-items stretch
+.direction-column
+  flex-direction column
+.flex-wrap
+  flex-wrap wrap
+*
+  margin 0
+  padding 0
+h1
+  font-size 30px
+h2,h3,h4
+  font-weight normal
+  font-size 20px
+li
+  list-style none
+.block
+  display block
+a
+  text-decoration none
+.ellipse
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+.movie-border
+  border 1px solid #efefef
+.right-line
+  position relative
+  &:before
+    content ''
+    height 100%
+    width 1px
+    transform scaleX(.5)
+    position absolute
+    right 0
+    top 0
+    background rgba(0,0,0,.05)
+.text-wrap
+  white-space normal
+.text-left
+  text-align left
+.text-center
+  text-align center
+.text-right
+  text-align right
+img
+  display block
+div a
+  color inherit
+  &:hover
+    color inherit
+.hidden
+  overflow hidden
+.caret
+  display inline-block
+  width 0
+  height 0
+  margin-left 2px
+  vertical-align middle
+  border-top 5px solid #666
+  border-right 5px solid transparent
+  border-left 5px solid transparent
+  transition all .2s ease
+.img-box
+  display block
+.img-box img
+  width 100%
+  height 100%
+  display block
+.img-scale
+  overflow hidden
+  img
+    transition all .3s
+  &:hover
+    .btn-play img
+      transform none
+    img
+      transform scale(1.1)
+.text-hv:hover
+  cursor pointer
+  color #E60026 !important
+  border-color #E60026 !important
+.my-card
+  box-sizing border-box
+  padding 20px
+  box-shadow 0 0 10px rgba(0,0,0,.1)
+  border-radius 10px
+  &>.songlist-header
+    padding 0 20px
+  .container
+    width  initial
+.button-card
+  padding 10px
+  box-shadow 0 0 10px rgba(0,0,0,.1)
+  border-radius 10px
+  font-size 12px
+  line-height 18px
+  color #999
+  cursor pointer
+  transition all .2s
+  &.active
+    color #444
+    &:hover
+      color #000
+      box-shadow 0 0 10px rgba(255,255,255,.3)
+      background rgba(0,0,0,.05)
+.absolute-center
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
+.relative
+  position relative
+
+.cover > img
+  width 100%
+  height 100%
+  display block
+
+i
+  font-style normal
+
+.button
+  cursor pointer
+  padding 7px 18px
+  border-radius 18px
+  border 1px #666 solid
+  text-align center
+
+  &.active
+    background $red
+    color #fff
+    border-color $red !important
+
+    &:hover
+      color #fff
+      background #E2165B
+
+  &:hover
+    color #000
+    background rgba(255, 255, 255, .9)
+
+.header-info-img
+  width 280px
+  height 280px
+
+  img
+    width 100%
+    height 100%
+
+.img
+  img
+    width 100%
+    height 100%
+.video-shadow
+  position relative
+  cursor pointer
+  &:after
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background rgba(0,0,0,.3)
+    opacity 0
+    z-index 2
+    transition opacity .2s
+  &:hover:after
+    opacity 1
+.h-text-blue:hover
+  color #00a1d6
+.background-blur
+  position absolute;
+  top 0
+  right 0
+  bottom 0
+  left 0
+  overflow hidden
+  opacity .5
+  z-index -1
+
+  &:after
+    content ""
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    height 50px
+    background linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff)
+
+  img
+    width 100%
+    height 100%
+    filter blur(30px)
+.bb
+  border-bottom 3px solid $blue
+.ivu-spin
+  margin 0 auto
+.ske
+  display flex
+  justify-content center
+  padding 200px 0
+.ske-ani
+  animation ske .8s linear infinite alternate
+  background rgba(0, 0, 0, .05)
+.background-blur
+  position absolute;
+  top 0
+  right 0
+  bottom 0
+  left 0
+  overflow hidden
+  opacity .3
+  z-index -1
+  img
+    width 100%
+    filter blur(30px)
+@keyframes ske
+  0%   {background: rgba(0,0,0,.06);}
+  25%  {background: rgba(0,0,0,.08);}
+  100% {background: rgba(0,0,0,.12);}
